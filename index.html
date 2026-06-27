@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>My Portfolio</h2>
+    </nav>
+
+    <div class="container">
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Hi, I am a frontend developer. Welcome to my simple project showcase!</p>
+        </section>
+
+        <section class="card">
+            <h2>To-Do List (Saves automatically)</h2>
+            <div style="display: flex; gap: 5px;">
+                <input type="text" id="todoInput" placeholder="New task..." style="flex: 1;">
+                <button id="addTodoBtn">Add</button>
+            </div>
+            <ul id="todoList" style="list-style: none; margin-top: 10px; padding: 0;"></ul>
+        </section>
+
+        <section class="card">
+            <h2>Product Filter</h2>
+            <div style="margin-bottom: 15px;">
+                <select id="categoryFilter">
+                    <option value="all">All Items</option>
+                    <option value="tech">Tech</option>
+                    <option value="apparel">Clothes</option>
+                </select>
+                <select id="sortCriteria">
+                    <option value="default">Sort By</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                </select>
+            </div>
+            <div id="productContainer"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
